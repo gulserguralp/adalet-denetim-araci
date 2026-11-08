@@ -20,7 +20,7 @@ streamlit run app.py
 
 ## Claude yorumu (isteğe bağlı)
 
-Anahtar olmadan uygulama çalışır, yalnızca bölüm 8 atlanır. Anahtarı kullanmak için `.streamlit/secrets.toml` dosyası oluştur:
+Anahtar olmadan uygulama çalışır, yalnızca Claude yorumu bölümü atlanır. Anahtarı kullanmak için `.streamlit/secrets.toml` dosyası oluştur:
 
 ```
 ANTHROPIC_API_KEY = "sk-ant-..."
@@ -47,6 +47,10 @@ Geliştirme ve test için Utrecht Fairness Recruitment veri seti kullanıldı (4
 | ThresholdOptimizer, equalized_odds | 0,854 | 0,493 | 0,094 |
 | ExponentiatedGradient, demographic_parity | 0,733 | 0,789 | 0,146 |
 | ExponentiatedGradient, equalized_odds | 0,829 | 0,504 | 0,118 |
+
+## Adalet–doğruluk bedeli
+
+![Adalet–doğruluk bedeli](adalet_dogruluk_bedeli.png)
 
 ## Sınırlar
 
